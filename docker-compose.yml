@@ -1,0 +1,10 @@
+# docker-compose.yml
+version: '3.1'
+services:
+  db:
+    build: .
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+    ports:
+      - 5432:5432
