@@ -1,0 +1,774 @@
+[
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Category.CategoryController",
+    "Method": "Add",
+    "RelativePath": "v1/category/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Category.CategoryController",
+    "Method": "Delete",
+    "RelativePath": "v1/category/delete{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Category.CategoryController",
+    "Method": "GetAllCategories",
+    "RelativePath": "v1/category/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Q.App.Api.Controllers.v1.Category.CategoryResponseModel, Q.App.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Category.CategoryController",
+    "Method": "GetCategoryById",
+    "RelativePath": "v1/category/get{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Q.App.Api.Controllers.v1.Category.CategoryResponseModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Condition.ConditionController",
+    "Method": "AddCondition",
+    "RelativePath": "v1/condition/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Condition.ConditionController",
+    "Method": "DeleteCondition",
+    "RelativePath": "v1/condition/delete{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Condition.ConditionController",
+    "Method": "GetAllConditions",
+    "RelativePath": "v1/condition/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Q.App.Api.Controllers.v1.Condition.ConditionResponseModel, Q.App.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Condition.ConditionController",
+    "Method": "GetConditionsById",
+    "RelativePath": "v1/condition/get{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Q.App.Api.Controllers.v1.Condition.ConditionResponseModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Instruction.InstructionController",
+    "Method": "Add",
+    "RelativePath": "v1/instruction/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Comment",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Instruction.InstructionController",
+    "Method": "DeleteInstruction",
+    "RelativePath": "v1/instruction/delete{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Instruction.InstructionController",
+    "Method": "GetAllInstructions",
+    "RelativePath": "v1/instruction/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Q.App.Api.Controllers.v1.Instruction.InstructionResponseModel, Q.App.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Instruction.InstructionController",
+    "Method": "GetInstructionById",
+    "RelativePath": "v1/instruction/get{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Q.App.Api.Controllers.v1.Instruction.InstructionResponseModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Item.ItemController",
+    "Method": "Add",
+    "RelativePath": "v1/item/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OwnerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Quantity",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "UnitOfMeasureId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ConditionId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Notes",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "LocationId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "EstimatedInsuranceUnitValue",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "PurchaseDate",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
+        "Name": "ExpectedLifeSpanInYears",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "EstimatedReplacementDate",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
+        "Name": "CalculateReplacementDate",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "UnitPurchaseCost",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Item.ItemController",
+    "Method": "DeleteItem",
+    "RelativePath": "v1/item/delete{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Item.ItemController",
+    "Method": "GetAlItems",
+    "RelativePath": "v1/item/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Q.App.Api.Controllers.v1.Item.ItemResponseModel, Q.App.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Item.ItemController",
+    "Method": "GetItemById",
+    "RelativePath": "v1/item/get{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Q.App.Api.Controllers.v1.Item.ItemResponseModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Location.LocationController",
+    "Method": "Add",
+    "RelativePath": "v1/location/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Q.App.Api.Controllers.v1.Location.LocationResponseModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Location.LocationController",
+    "Method": "Delete",
+    "RelativePath": "v1/location/delete{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Location.LocationController",
+    "Method": "GetAll",
+    "RelativePath": "v1/location/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Q.App.Api.Controllers.v1.Location.LocationResponseModel, Q.App.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Location.LocationController",
+    "Method": "GetById",
+    "RelativePath": "v1/location/get{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Q.App.Api.Controllers.v1.Location.LocationResponseModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Note.NotesController",
+    "Method": "Add",
+    "RelativePath": "v1/note/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Comment",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Note.NotesController",
+    "Method": "Delete",
+    "RelativePath": "v1/note/delete{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Note.NotesController",
+    "Method": "GetAllNotes",
+    "RelativePath": "v1/note/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Q.App.Api.Controllers.v1.Note.NotesResponseModel, Q.App.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Note.NotesController",
+    "Method": "GetNoteById",
+    "RelativePath": "v1/note/get{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Q.App.Api.Controllers.v1.Note.NotesResponseModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Organisation.OrganisationController",
+    "Method": "Add",
+    "RelativePath": "v1/organisation/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Organisation.OrganisationController",
+    "Method": "Delete",
+    "RelativePath": "v1/organisation/delete{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Organisation.OrganisationController",
+    "Method": "Get",
+    "RelativePath": "v1/organisation/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Q.App.Api.Controllers.v1.Organisation.OrganisationResponseModel, Q.App.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.Organisation.OrganisationController",
+    "Method": "Get",
+    "RelativePath": "v1/organisation/get{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Q.App.Api.Controllers.v1.Organisation.OrganisationResponseModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.UnitOfMeasure.UnitOfMesureController",
+    "Method": "Add",
+    "RelativePath": "v1/unitOfMeasure/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.UnitOfMeasure.UnitOfMesureController",
+    "Method": "Delete",
+    "RelativePath": "v1/unitOfMeasure/delete{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.UnitOfMeasure.UnitOfMesureController",
+    "Method": "GetAllUnitOfMeasures",
+    "RelativePath": "v1/unitOfMeasure/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Q.App.Api.Controllers.v1.UnitOfMeasure.UnitOfMeasureResponseModel, Q.App.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Q.App.Api.Controllers.v1.UnitOfMeasure.UnitOfMesureController",
+    "Method": "GetUnitOfMeasureById",
+    "RelativePath": "v1/unitOfMeasure/get{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Q.App.Api.Controllers.v1.UnitOfMeasure.UnitOfMeasureResponseModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
