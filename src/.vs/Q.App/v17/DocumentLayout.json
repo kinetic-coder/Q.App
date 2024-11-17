@@ -1,12 +1,245 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\dev\\Q.App\\src\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|c:\\dev\\q.app\\src\\q.app.api\\controllers\\v1\\unitofmeasure\\unitofmesurecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|solutionrelative:q.app.api\\controllers\\v1\\unitofmeasure\\unitofmesurecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|c:\\dev\\q.app\\src\\q.app.api\\controllers\\v1\\unitofmeasure\\unitofmeasureresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|solutionrelative:q.app.api\\controllers\\v1\\unitofmeasure\\unitofmeasureresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|c:\\dev\\q.app\\src\\q.app.api\\controllers\\v1\\organisation\\organisationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|solutionrelative:q.app.api\\controllers\\v1\\organisation\\organisationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|c:\\dev\\q.app\\src\\q.app.api\\controllers\\v1\\note\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|solutionrelative:q.app.api\\controllers\\v1\\note\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|c:\\dev\\q.app\\src\\q.app.api\\controllers\\v1\\location\\locationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|solutionrelative:q.app.api\\controllers\\v1\\location\\locationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|c:\\dev\\q.app\\src\\q.app.api\\controllers\\v1\\item\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|solutionrelative:q.app.api\\controllers\\v1\\item\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|c:\\dev\\q.app\\src\\q.app.api\\controllers\\v1\\category\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|solutionrelative:q.app.api\\controllers\\v1\\category\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|c:\\dev\\q.app\\src\\q.app.api\\controllers\\v1\\condition\\conditioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|solutionrelative:q.app.api\\controllers\\v1\\condition\\conditioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|c:\\dev\\q.app\\src\\q.app.api\\controllers\\v1\\condition\\conditionresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|solutionrelative:q.app.api\\controllers\\v1\\condition\\conditionresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|c:\\dev\\q.app\\src\\q.app.api\\controllers\\v1\\instruction\\instructioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|solutionrelative:q.app.api\\controllers\\v1\\instruction\\instructioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|c:\\dev\\q.app\\src\\q.app.api\\controllers\\v1\\item\\itemresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|solutionrelative:q.app.api\\controllers\\v1\\item\\itemresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|c:\\dev\\q.app\\src\\q.app.api\\controllers\\v1\\category\\categoryresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|solutionrelative:q.app.api\\controllers\\v1\\category\\categoryresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|c:\\dev\\q.app\\src\\q.app.api\\models\\baseresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|solutionrelative:q.app.api\\models\\baseresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|c:\\dev\\q.app\\src\\q.app.api\\controllers\\v1\\location\\locationresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDCE713-CB8A-475B-BA67-CA8DA23133D1}|Q.App.Api\\Q.App.Api.csproj|solutionrelative:q.app.api\\controllers\\v1\\location\\locationresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ItemController.cs",
+              "DocumentMoniker": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Item\\ItemController.cs",
+              "RelativeDocumentMoniker": "Q.App.Api\\Controllers\\v1\\Item\\ItemController.cs",
+              "ToolTip": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Item\\ItemController.cs",
+              "RelativeToolTip": "Q.App.Api\\Controllers\\v1\\Item\\ItemController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAiwDAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T18:29:49.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NotesController.cs",
+              "DocumentMoniker": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Note\\NotesController.cs",
+              "RelativeDocumentMoniker": "Q.App.Api\\Controllers\\v1\\Note\\NotesController.cs",
+              "ToolTip": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Note\\NotesController.cs",
+              "RelativeToolTip": "Q.App.Api\\Controllers\\v1\\Note\\NotesController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAYwCcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T18:25:19.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Category\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Q.App.Api\\Controllers\\v1\\Category\\CategoryController.cs",
+              "ToolTip": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Category\\CategoryController.cs",
+              "RelativeToolTip": "Q.App.Api\\Controllers\\v1\\Category\\CategoryController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA5wB8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T18:07:38.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LocationController.cs",
+              "DocumentMoniker": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Location\\LocationController.cs",
+              "RelativeDocumentMoniker": "Q.App.Api\\Controllers\\v1\\Location\\LocationController.cs",
+              "ToolTip": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Location\\LocationController.cs",
+              "RelativeToolTip": "Q.App.Api\\Controllers\\v1\\Location\\LocationController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T17:40:36.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ConditionController.cs",
+              "DocumentMoniker": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Condition\\ConditionController.cs",
+              "RelativeDocumentMoniker": "Q.App.Api\\Controllers\\v1\\Condition\\ConditionController.cs",
+              "ToolTip": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Condition\\ConditionController.cs",
+              "RelativeToolTip": "Q.App.Api\\Controllers\\v1\\Condition\\ConditionController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwB8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T18:11:04.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrganisationController.cs",
+              "DocumentMoniker": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Organisation\\OrganisationController.cs",
+              "RelativeDocumentMoniker": "Q.App.Api\\Controllers\\v1\\Organisation\\OrganisationController.cs",
+              "ToolTip": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Organisation\\OrganisationController.cs",
+              "RelativeToolTip": "Q.App.Api\\Controllers\\v1\\Organisation\\OrganisationController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T17:38:24.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UnitOfMeasureResponseModel.cs",
+              "DocumentMoniker": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\UnitOfMeasure\\UnitOfMeasureResponseModel.cs",
+              "RelativeDocumentMoniker": "Q.App.Api\\Controllers\\v1\\UnitOfMeasure\\UnitOfMeasureResponseModel.cs",
+              "ToolTip": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\UnitOfMeasure\\UnitOfMeasureResponseModel.cs",
+              "RelativeToolTip": "Q.App.Api\\Controllers\\v1\\UnitOfMeasure\\UnitOfMeasureResponseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T18:27:02.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitOfMesureController.cs",
+              "DocumentMoniker": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\UnitOfMeasure\\UnitOfMesureController.cs",
+              "RelativeDocumentMoniker": "Q.App.Api\\Controllers\\v1\\UnitOfMeasure\\UnitOfMesureController.cs",
+              "ToolTip": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\UnitOfMeasure\\UnitOfMesureController.cs",
+              "RelativeToolTip": "Q.App.Api\\Controllers\\v1\\UnitOfMeasure\\UnitOfMesureController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T18:27:14.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConditionResponseModel.cs",
+              "DocumentMoniker": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Condition\\ConditionResponseModel.cs",
+              "RelativeDocumentMoniker": "Q.App.Api\\Controllers\\v1\\Condition\\ConditionResponseModel.cs",
+              "ToolTip": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Condition\\ConditionResponseModel.cs",
+              "RelativeToolTip": "Q.App.Api\\Controllers\\v1\\Condition\\ConditionResponseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T18:56:36.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InstructionController.cs",
+              "DocumentMoniker": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Instruction\\InstructionController.cs",
+              "RelativeDocumentMoniker": "Q.App.Api\\Controllers\\v1\\Instruction\\InstructionController.cs",
+              "ToolTip": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Instruction\\InstructionController.cs",
+              "RelativeToolTip": "Q.App.Api\\Controllers\\v1\\Instruction\\InstructionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T18:22:44.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CategoryResponseModel.cs",
+              "DocumentMoniker": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Category\\CategoryResponseModel.cs",
+              "RelativeDocumentMoniker": "Q.App.Api\\Controllers\\v1\\Category\\CategoryResponseModel.cs",
+              "ToolTip": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Category\\CategoryResponseModel.cs",
+              "RelativeToolTip": "Q.App.Api\\Controllers\\v1\\Category\\CategoryResponseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T18:04:41.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ItemResponseModel.cs",
+              "DocumentMoniker": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Item\\ItemResponseModel.cs",
+              "RelativeDocumentMoniker": "Q.App.Api\\Controllers\\v1\\Item\\ItemResponseModel.cs",
+              "ToolTip": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Item\\ItemResponseModel.cs",
+              "RelativeToolTip": "Q.App.Api\\Controllers\\v1\\Item\\ItemResponseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T18:29:37.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BaseResponseModel.cs",
+              "DocumentMoniker": "C:\\dev\\Q.App\\src\\Q.App.Api\\Models\\BaseResponseModel.cs",
+              "RelativeDocumentMoniker": "Q.App.Api\\Models\\BaseResponseModel.cs",
+              "ToolTip": "C:\\dev\\Q.App\\src\\Q.App.Api\\Models\\BaseResponseModel.cs",
+              "RelativeToolTip": "Q.App.Api\\Models\\BaseResponseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T18:02:33.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LocationResponseModel.cs",
+              "DocumentMoniker": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Location\\LocationResponseModel.cs",
+              "RelativeDocumentMoniker": "Q.App.Api\\Controllers\\v1\\Location\\LocationResponseModel.cs",
+              "ToolTip": "C:\\dev\\Q.App\\src\\Q.App.Api\\Controllers\\v1\\Location\\LocationResponseModel.cs",
+              "RelativeToolTip": "Q.App.Api\\Controllers\\v1\\Location\\LocationResponseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T17:41:05.908Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
