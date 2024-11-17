@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "682KUQyf9oH+ULBeEYe8MOWy0AfFHyYcKTPT39wuMSY=",
+  "Source": "Q.App.Api",
+  "BasePath": "_content/Q.App.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
