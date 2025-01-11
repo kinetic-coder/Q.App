@@ -38,21 +38,6 @@ CREATE TABLE UserTenant (
     UNIQUE (UserId, TenantId)
 );
 
-/* Create a table for kit */
-CREATE TABLE Kit (
-    KitId INT PRIMARY KEY AUTO_INCREMENT,
-    TenantId INT NOT NULL,
-    Nickname varchar(255) NOT NULL,
-    KitName VARCHAR(100) NOT NULL,
-    KitDescription VARCHAR(255),
-    PurchaseDate DATE,
-    PurchasePrice DECIMAL(10,2),
-    Quantity INT,
-    KitStatus VARCHAR(20) DEFAULT 'Active',
-    CreatedOn TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    UpdatedOn TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    FOREIGN KEY (TenantId) REFERENCES Tenant(TenantId)
-);
 /* Create an address location table */
 CREATE TABLE Address (
     AddressLocationId INT PRIMARY KEY AUTO_INCREMENT,
@@ -68,6 +53,51 @@ CREATE TABLE Address (
     UpdatedOn TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (TenantId) REFERENCES Tenant(TenantId)
 );
+
+/* Table to hold the category the kit falls into */
+CREATE TABLE KitCategory (
+    KitCategoryId INT PRIMARY KEY AUTO_INCREMENT,
+    TenantId INT NOT NULL,
+    CategoryName VARCHAR(100) NOT NULL,
+    CategoryDescription VARCHAR(255),
+    CreatedOn TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    UpdatedOn TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (TenantId) REFERENCES Tenant(TenantId)
+);
+/* store condition of the kit */
+CREATE TABLE KitCondition (
+    KitConditionId INT PRIMARY KEY AUTO_INCREMENT,
+    TenantId INT NOT NULL,
+    ConditionName VARCHAR(100) NOT NULL,
+    ConditionDescription VARCHAR(255),
+    CreatedOn TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    UpdatedOn TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (TenantId) REFERENCES Tenant(TenantId)
+);
+
+
+/* Create a table for kit */
+CREATE TABLE Kit (
+    KitId INT PRIMARY KEY AUTO_INCREMENT,
+    TenantId INT NOT NULL,
+    Nickname varchar(255) NOT NULL,
+    KitName VARCHAR(100) NOT NULL,
+    KitDescription VARCHAR(255),
+    PurchaseDate DATE,
+    PurchasePrice DECIMAL(10,2),
+    LiftSpanInYears INT,
+    EstimatedReplacementDate DATE,
+    CategoryId INT NOT NULL,
+    KitConditionId INT NOT NULL,
+    Notes VARCHAR(255),
+    FOREIGN KEY (CategoryId) REFERENCES KitCategory(KitCategoryId),
+    KitStatus VARCHAR(20) DEFAULT 'Active',
+    CreatedOn TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    UpdatedOn TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (TenantId) REFERENCES Tenant(TenantId)
+);
+
+
 /* Table to store which address the kit is stored at */
 CREATE TABLE KitAddress (
     KitAddressId INT PRIMARY KEY AUTO_INCREMENT,
@@ -78,3 +108,4 @@ CREATE TABLE KitAddress (
     FOREIGN KEY (AddressLocationId) REFERENCES Address(AddressLocationId),
     UNIQUE (KitId, AddressLocationId)
 );
+
