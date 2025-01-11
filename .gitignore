@@ -174,3 +174,5 @@ src/Q.App.Api.Test/obj
 src/Q.App.Api.Test/bin
 
 .vs
+
+/database/setup-live-data.sql
