@@ -2,7 +2,7 @@ use QApp;
 
 /* table used to hold the Tenant informaiton which represents the registered organisation */
 CREATE TABLE Tenant (
-    TenantId INT PRIMARY KEY AUTO_INCREMENT,
+    TenantId BINARY(16) PRIMARY KEY,
     TenantName VARCHAR(100) NOT NULL,
     TenantEmail VARCHAR(255),
     CreatedOn TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -11,8 +11,8 @@ CREATE TABLE Tenant (
 
 /* table used to hold the User information */
 CREATE TABLE User (
-    UserId INT PRIMARY KEY AUTO_INCREMENT,
-    TenantId INT NOT NULL,
+    UserId BINARY(16) PRIMARY KEY,
+    TenantId BINARY(16) NOT NULL,
     UserName VARCHAR(100) NOT NULL,
     UserEmail VARCHAR(255) NOT NULL,
     UserPassword VARCHAR(255) NOT NULL,
@@ -29,9 +29,9 @@ CREATE TABLE User (
 );
 /* table used to link the User and Tenant tables with a many-to-many relationship */
 CREATE TABLE UserTenant (
-    UserTenantId INT PRIMARY KEY AUTO_INCREMENT,
-    UserId INT NOT NULL,
-    TenantId INT NOT NULL,
+    UserTenantId BINARY(16) PRIMARY KEY,
+    UserId BINARY(16) NOT NULL,
+    TenantId BINARY(16) NOT NULL,
     CreatedOn TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (UserId) REFERENCES User(UserId),
     FOREIGN KEY (TenantId) REFERENCES Tenant(TenantId),
@@ -40,9 +40,9 @@ CREATE TABLE UserTenant (
 
 /* Create an address location table */
 CREATE TABLE Address (
-    AddressLocationId INT PRIMARY KEY AUTO_INCREMENT,
+    AddressLocationId BINARY(16) PRIMARY KEY,
     Nickname VARCHAR(100) DEFAULT'',
-    TenantId INT NOT NULL,
+    TenantId BINARY(16) NOT NULL,
     AddressLine1 VARCHAR(255) NOT NULL,
     AddressLine2 VARCHAR(255),
     Town varchar(255),
@@ -56,8 +56,8 @@ CREATE TABLE Address (
 
 /* Table to hold the category the kit falls into */
 CREATE TABLE KitCategory (
-    KitCategoryId INT PRIMARY KEY AUTO_INCREMENT,
-    TenantId INT NOT NULL,
+    KitCategoryId BINARY(16) PRIMARY KEY,
+    TenantId BINARY(16) NOT NULL,
     CategoryName VARCHAR(100) NOT NULL,
     CategoryDescription VARCHAR(255),
     CreatedOn TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -66,8 +66,8 @@ CREATE TABLE KitCategory (
 );
 /* store condition of the kit */
 CREATE TABLE KitCondition (
-    KitConditionId INT PRIMARY KEY AUTO_INCREMENT,
-    TenantId INT NOT NULL,
+    KitConditionId BINARY(16) PRIMARY KEY,
+    TenantId BINARY(16) NOT NULL,
     ConditionName VARCHAR(100) NOT NULL,
     ConditionDescription VARCHAR(255),
     CreatedOn TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -78,8 +78,8 @@ CREATE TABLE KitCondition (
 
 /* Create a table for kit */
 CREATE TABLE Kit (
-    KitId INT PRIMARY KEY AUTO_INCREMENT,
-    TenantId INT NOT NULL,
+    KitId BINARY(16) PRIMARY KEY,
+    TenantId BINARY(16) NOT NULL,
     Nickname varchar(255) NOT NULL,
     KitName VARCHAR(100) NOT NULL,
     KitDescription VARCHAR(255),
@@ -88,8 +88,8 @@ CREATE TABLE Kit (
     LiftSpanInYears INT,
     EstimatedInsuranceValue DECIMAL(10,2),
     EstimatedReplacementDate DATE,
-    KitCategoryId INT NOT NULL,
-    KitConditionId INT NOT NULL,
+    KitCategoryId BINARY(16) NOT NULL,
+    KitConditionId BINARY(16) NOT NULL,
     Notes VARCHAR(255),
     KitCode VARCHAR(255),
     FOREIGN KEY (KitCategoryId) REFERENCES KitCategory(KitCategoryId),
@@ -102,9 +102,9 @@ CREATE TABLE Kit (
 
 /* Table to store which address the kit is stored at */
 CREATE TABLE KitAddress (
-    KitAddressId INT PRIMARY KEY AUTO_INCREMENT,
-    KitId INT NOT NULL,
-    AddressLocationId INT NOT NULL,
+    KitAddressId BINARY(16) PRIMARY KEY,
+    KitId BINARY(16) NOT NULL,
+    AddressLocationId BINARY(16) NOT NULL,
     CreatedOn TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (KitId) REFERENCES Kit(KitId),
     FOREIGN KEY (AddressLocationId) REFERENCES Address(AddressLocationId),

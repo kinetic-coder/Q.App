@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Q.App.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a350cc4c700c6361018160da771b780dc1c9565")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1adff06a7588b6774b5e57f4f1552a68ed3b928")]
 [assembly: System.Reflection.AssemblyProductAttribute("Q.App.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Q.App.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

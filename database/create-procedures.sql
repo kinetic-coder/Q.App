@@ -17,34 +17,44 @@ END;
 DELIMITER ;
 
 
-DROP PROCEDURE IF EXISTS sp_add_kit;
+-- DROP PROCEDURE IF EXISTS sp_add_kit;
+
+-- DELIMITER //
+-- CREATE PROCEDURE sp_add_kit(
+--     IN TenantId BINARY(16), 
+--     IN Nickname VARCHAR(255), 
+--     IN KitName VARCHAR(100), 
+--     IN KitDescription VARCHAR(255),
+--     IN PurchaseDate DATE,
+--     IN PurchasePrice DECIMAL(10,2), 
+--     IN LiftSpanInYears INT, 
+--     IN EstimatedInsuranceValue DECIMAL(10,2), 
+--     IN EstimatedReplacementDate DATE, 
+--     IN KitCategory VARCHAR(255), 
+--     IN KitCondition VARCHAR(255), 
+--     IN Notes VARCHAR(255),
+--     IN KitCode VARCHAR(255)
+-- )
+-- BEGIN
+--     DECLARE kit_category_id BINARY(16) DEFAULT 0;
+--     DECLARE kit_condition_id BINARY(16) DEFAULT 0;
+    
+--     SELECT KitCategoryId INTO kit_category_id FROM KitCategory WHERE lcase(trim(CategoryName)) = lcase(trim(KitCategory));
+--     SELECT KitConditionId INTO kit_condition_id FROM KitCondition WHERE lcase(trim(ConditionName)) = lcase(trim(KitCondition));
+    
+--     INSERT INTO Kit (TenantId, Nickname, KitName, KitDescription, PurchaseDate, PurchasePrice, LiftSpanInYears, EstimatedInsuranceValue, EstimatedReplacementDate, KitCategoryId, KitConditionId, Notes, KitCode)
+--     VALUES (TenantId, Nickname, KitName, KitDescription, PurchaseDate, PurchasePrice, LiftSpanInYears, EstimatedInsuranceValue, EstimatedReplacementDate, kit_category_id, kit_condition_id, Notes, KitCode);
+    
+-- END;
+-- //
+-- DELIMITER ;
+
+DROP PROCEDURE IF EXISTS sp_get_all_categories;
 
 DELIMITER //
-CREATE PROCEDURE sp_add_kit(
-    IN TenantId int, 
-    IN Nickname VARCHAR(255), 
-    IN KitName VARCHAR(100), 
-    IN KitDescription VARCHAR(255),
-    IN PurchaseDate DATE,
-    IN PurchasePrice DECIMAL(10,2), 
-    IN LiftSpanInYears INT, 
-    IN EstimatedInsuranceValue DECIMAL(10,2), 
-    IN EstimatedReplacementDate DATE, 
-    IN KitCategory VARCHAR(255), 
-    IN KitCondition VARCHAR(255), 
-    IN Notes VARCHAR(255),
-    IN KitCode VARCHAR(255)
-)
+CREATE PROCEDURE sp_get_all_categories()
 BEGIN
-    DECLARE kit_category_id INT DEFAULT 0;
-    DECLARE kit_condition_id INT DEFAULT 0;
-    
-    SELECT KitCategoryId INTO kit_category_id FROM KitCategory WHERE lcase(trim(CategoryName)) = lcase(trim(KitCategory));
-    SELECT KitConditionId INTO kit_condition_id FROM KitCondition WHERE lcase(trim(ConditionName)) = lcase(trim(KitCondition));
-    
-    INSERT INTO Kit (TenantId, Nickname, KitName, KitDescription, PurchaseDate, PurchasePrice, LiftSpanInYears, EstimatedInsuranceValue, EstimatedReplacementDate, KitCategoryId, KitConditionId, Notes, KitCode)
-    VALUES (TenantId, Nickname, KitName, KitDescription, PurchaseDate, PurchasePrice, LiftSpanInYears, EstimatedInsuranceValue, EstimatedReplacementDate, kit_category_id, kit_condition_id, Notes, KitCode);
-    
+    SELECT * FROM KitCategory;
 END;
 //
 DELIMITER ;
