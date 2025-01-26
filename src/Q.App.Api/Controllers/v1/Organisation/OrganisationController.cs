@@ -15,12 +15,12 @@ namespace Q.App.Api.Controllers.v1.Organisation
         [HttpGet("/v1/organisation/get{id}")]
         public OrganisationResponseModel Get(int id)
         {
-            var organisation = Organisations.Find(l => l.Id == id);
+            var organisation = Organisations.Find(l => l.Id.Equals(id));
 
             if (organisation is not null)
                 return organisation;
             else
-                return new OrganisationResponseModel { Id = 0, Name = "" };
+                return new OrganisationResponseModel { Id = Guid.NewGuid(), Name = "" };
         }
 
         [HttpPost("/v1/organisation/add")]
@@ -32,7 +32,7 @@ namespace Q.App.Api.Controllers.v1.Organisation
         [HttpDelete("/v1/organisation/delete{id}")]
         public ActionResult Delete(int id)
         {
-            var locationToRemove = Organisations.Find(l => l.Id == id);
+            var locationToRemove = Organisations.Find(l => l.Id.Equals(id));
 
             if (locationToRemove is not null)
             {

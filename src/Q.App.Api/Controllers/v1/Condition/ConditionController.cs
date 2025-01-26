@@ -15,12 +15,12 @@ namespace Q.App.Api.Controllers.v1.Condition
         [HttpGet("/v1/condition/get{id}")]
         public ConditionResponseModel GetConditionsById(int id)
         {
-            var Condition = Conditions.Find(l => l.Id == id);
+            var Condition = Conditions.Find(l => l.Id.Equals(id));
 
             if (Condition is not null)
                 return Condition;
             else
-                return new ConditionResponseModel { Id = 0, Name = "" };
+                return new ConditionResponseModel { Id = Guid.NewGuid(), Name = "" };
         }
 
         [HttpPost("/v1/condition/add")]
@@ -32,7 +32,7 @@ namespace Q.App.Api.Controllers.v1.Condition
         [HttpDelete("/v1/condition/delete{id}")]
         public ActionResult DeleteCondition(int id)
         {
-            var conditionToRemove = Conditions.Find(l => l.Id == id);
+            var conditionToRemove = Conditions.Find(l => l.Id.Equals(id));
 
             if (conditionToRemove is not null)
             {

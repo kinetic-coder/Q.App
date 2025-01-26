@@ -4,7 +4,7 @@ namespace Q.App.Api.Controllers.v1.UnitOfMeasure
 {
     public class UnitOfMesureController : Controller
     {
-        private static List<UnitOfMeasureResponseModel> UnitOfMeasures = new List<UnitOfMeasureResponseModel>();
+        private static readonly List<UnitOfMeasureResponseModel> UnitOfMeasures = new List<UnitOfMeasureResponseModel>();
 
         [HttpGet("/v1/unitOfMeasure/get")]
         public List<UnitOfMeasureResponseModel> GetAllUnitOfMeasures()
@@ -15,12 +15,12 @@ namespace Q.App.Api.Controllers.v1.UnitOfMeasure
         [HttpGet("/v1/unitOfMeasure/get{id}")]
         public UnitOfMeasureResponseModel GetUnitOfMeasureById(int id)
         {
-            var unitOfMeasure = UnitOfMeasures.Find(l => l.Id == id);
+            var unitOfMeasure = UnitOfMeasures.Find(l => l.Id.Equals(id));
 
             if (unitOfMeasure is not null)
                 return unitOfMeasure;
             else
-                return new UnitOfMeasureResponseModel { Id = 0, Name = "" };
+                return new UnitOfMeasureResponseModel { Id = Guid.NewGuid(), Name = "" };
         }
 
         [HttpPost("/v1/unitOfMeasure/add")]
@@ -32,7 +32,7 @@ namespace Q.App.Api.Controllers.v1.UnitOfMeasure
         [HttpDelete("/v1/unitOfMeasure/delete{id}")]
         public ActionResult Delete(int id)
         {
-            var unitOfMeasureToRemove = UnitOfMeasures.Find(l => l.Id == id);
+            var unitOfMeasureToRemove = UnitOfMeasures.Find(l => l.Id.Equals(id));
 
             if (unitOfMeasureToRemove is not null)
             {

@@ -15,14 +15,14 @@ namespace Q.App.Api.Controllers.v1.Item
         [HttpGet("/v1/item/get{id}")]
         public ItemResponseModel GetItemById(int id)
         {
-            var location = Items.Find(l => l.Id == id);
+            var location = Items.Find(l => l.Id.Equals(id));
 
             if (location is not null)
                 return location;
             else
                 return new ItemResponseModel
                 {
-                    Id = 0,
+                    Id = Guid.NewGuid(),
                     Name = "",
                     OwnerId = 0,
                     CalculateReplacementDate = false,
@@ -49,7 +49,7 @@ namespace Q.App.Api.Controllers.v1.Item
         [HttpDelete("/v1/item/delete{id}")]
         public ActionResult DeleteItem(int id)
         {
-            var itemToRemove = Items.Find(l => l.Id == id);
+            var itemToRemove = Items.Find(l => l.Id.Equals(id));
 
             if (itemToRemove is not null)
             {

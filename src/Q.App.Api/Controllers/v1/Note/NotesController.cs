@@ -15,12 +15,12 @@ namespace Q.App.Api.Controllers.v1.Note
         [HttpGet("/v1/note/get{id}")]
         public NotesResponseModel GetNoteById(int id)
         {
-            var note = Notes.Find(l => l.Id == id);
+            var note = Notes.Find(l => l.Id.Equals(id));
 
             if (note is not null)
                 return note;
             else
-                return new NotesResponseModel { Id = 0, Comment = "" };
+                return new NotesResponseModel { Id = Guid.NewGuid(), Comment = "" };
         }
 
         [HttpPost("/v1/note/add")]
@@ -32,7 +32,7 @@ namespace Q.App.Api.Controllers.v1.Note
         [HttpDelete("/v1/note/delete{id}")]
         public ActionResult Delete(int id)
         {
-            var noteToRemove = Notes.Find(l => l.Id == id);
+            var noteToRemove = Notes.Find(l => l.Id.Equals(id));
 
             if (noteToRemove is not null)
             {

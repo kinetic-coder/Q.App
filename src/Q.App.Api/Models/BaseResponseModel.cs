@@ -2,10 +2,6 @@
 {
     public class BaseResponseModel
     {
-        public required int Id { get; set; }
-        public BaseResponseModel() {
-            Id = 0;
-        }
-
+        public required Guid Id { get; set; }
     }
 }

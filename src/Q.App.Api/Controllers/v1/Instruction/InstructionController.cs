@@ -15,12 +15,12 @@ namespace Q.App.Api.Controllers.v1.Instruction
         [HttpGet("/v1/instruction/get{id}")]
         public InstructionResponseModel GetInstructionById(int id)
         {
-            var instruction = Instructions.Find(l => l.Id == id);
+            var instruction = Instructions.Find(l => l.Id.Equals(id));
 
             if (instruction is not null)
                 return instruction;
             else
-                return new InstructionResponseModel { Id = 0, Comment = "" };
+                return new InstructionResponseModel { Id = Guid.NewGuid(), Comment = "" };
         }
 
         [HttpPost("/v1/instruction/add")]
@@ -32,7 +32,7 @@ namespace Q.App.Api.Controllers.v1.Instruction
         [HttpDelete("/v1/instruction/delete{id}")]
         public ActionResult DeleteInstruction(int id)
         {
-            var instructionToRemove = Instructions.Find(l => l.Id == id);
+            var instructionToRemove = Instructions.Find(l => l.Id.Equals(id));
 
             if (instructionToRemove is not null)
             {

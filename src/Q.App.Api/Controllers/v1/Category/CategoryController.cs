@@ -1,42 +1,59 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MySql.Data.MySqlClient;
+using Q.App.Api.Repositories;
 
 namespace Q.App.Api.Controllers.v1.Category
 {
     public class CategoryController : Controller
     {
-        private static List<CategoryResponseModel> Categories = new List<CategoryResponseModel>();
+        private static List<CategoryResponseModel> _categories = new List<CategoryResponseModel>();
 
         [HttpGet("/v1/category/get")]
-        public List<CategoryResponseModel> GetAllCategories()
+        public List<Models.Category> GetAllCategories()
         {
-            return Categories;
+            var connectionString = "Server=localhost;Database=QApp;Uid=root;Pwd=ChangeMeAtDeploymentTime;";
+            MySqlConnection db = new MySqlConnection(connectionString);
+            db.Open();
+            var repo = new CategoryRepository(db);
+            List<Models.Category> categories;
+            try
+            {
+                categories = repo.GetCategories();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+            
+            return categories;
         }
 
         [HttpGet("/v1/category/get{Id}")]
         public CategoryResponseModel GetCategoryById(int id)
         {
-            var category = Categories.Find(l => l.Id == id);
+            var category = _categories.Find(l => l.Id.Equals(id));
 
             if (category is not null)
                 return category;
             else
-                return new CategoryResponseModel { Id = 0, Name = "" };
+                return new CategoryResponseModel { Id = Guid.NewGuid(), Name = "" };
         }
 
         [HttpPost("/v1/category/add")]
         public void Add(CategoryResponseModel model)
         {
-            Categories.Add(model);
+            _categories.Add(model);
         }
 
         [HttpDelete("/v1/category/delete{id}")]
         public ActionResult Delete(int id)
         {
-            var categoryToRemove = Categories.Find(l => l.Id == id);
+            var categoryToRemove = _categories.Find(l => l.Id.Equals(id));
 
             if (categoryToRemove is not null)
             {
-                Categories.Remove(categoryToRemove);
+                _categories.Remove(categoryToRemove);
                 return Ok();
             }
             else

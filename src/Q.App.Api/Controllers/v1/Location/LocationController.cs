@@ -17,12 +17,12 @@ namespace Q.App.Api.Controllers.v1.Location
         [HttpGet("/v1/location/get{id}")]
         public LocationResponseModel GetById(int id)
         {
-            var location = Locations.Find(l => l.Id == id);
+            var location = Locations.Find(l => l.Id.Equals(id));
 
             if (location is not null)
                 return location;
             else
-                return new LocationResponseModel { Id = 0, Description = "" };
+                return new LocationResponseModel { Id = Guid.NewGuid(), Description = "" };
         }
 
         [HttpPost("/v1/location/add")]
@@ -34,7 +34,7 @@ namespace Q.App.Api.Controllers.v1.Location
         [HttpDelete("/v1/location/delete{id}")]
         public ActionResult Delete(int id)
         {
-            var locationToRemove = Locations.Find(l => l.Id == id);
+            var locationToRemove = Locations.Find(l => l.Id.Equals(id));
 
             if (locationToRemove is not null)
             {
