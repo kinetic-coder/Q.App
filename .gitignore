@@ -166,9 +166,8 @@ import/
 
 *.env
 
-/src/Q.App.Api/obj
-/src/Q.App.Api/bin
-/src/Q.App.Api/Debug
+src/Q.App.Api/obj
+src/Q.App.Api/bin
 
 src/Q.App.Api.Test/obj
 src/Q.App.Api.Test/bin
@@ -181,3 +180,10 @@ src/Q.App.Api.Test/bin
 /local_dev
 /mysql-connector-python
 /database/mysql-connector-python
+database/mysql-connector-python
+
+local_dev
+
+.vs
+
+src/.idea
