@@ -5,24 +5,31 @@ using Q.App.Api.Models;
 
 namespace Q.App.Api.Repositories;
 
-public class CategoryRepository(IDbConnection dbConnection) : BaseRepository(dbConnection), IReadDataRepository<Category>
+public class CategoryRepository(MySqlConnection dbConnection) : BaseRepository(dbConnection), IReadDataRepository<Category>
 {
-    public List<Category> GetCategories()
+    public List<Category> Get()
     {
         List<Category> categories = new List<Category>();
         try
         {
-            var cmd = new MySqlCommand("get_all_categories", base.DbConnection);
+            var cmd = new MySqlCommand("sp_get_all_categories", base.DbConnection);
             cmd.CommandType = CommandType.StoredProcedure;  
             var reader = cmd.ExecuteReader();
 
             while (reader.Read())
             {
-                var category = new Category();
-                
-                category.Id = (Guid)reader["KitCategoryId"];
-                category.Name = reader["KitCategoryName"].ToString() ?? string.Empty;
-                category.TenantId = (Guid)reader["TenantId"];
+                var categoryTenantId = (Guid)reader["TenantId"];
+                var categoryId = (Guid)reader["KitCategoryId"];
+                var categoryName = reader["CategoryName"].ToString() ?? string.Empty;
+                var description = reader["CategoryDescription"].ToString() ?? string.Empty;
+
+                var category = new Category()
+                {
+                    Id = categoryId,
+                    Name = categoryName,
+                    TenantId = categoryTenantId,
+                    Description = description
+                };
                 categories.Add(category);
             }
         }
@@ -31,9 +38,10 @@ public class CategoryRepository(IDbConnection dbConnection) : BaseRepository(dbC
             Console.WriteLine(e);
             throw;
         }
+        return categories;
     }
 
-    public Category GetCategory(Guid id)
+    public Category Get(Guid id)
     {
         throw new NotImplementedException();
     }

@@ -16,6 +16,24 @@ END;
 //
 DELIMITER ;
 
+DELIMITER //
+
+CREATE FUNCTION BinaryToGuid(binary_value BINARY(16)) 
+RETURNS CHAR(36) DETERMINISTIC
+BEGIN
+    RETURN LOWER(
+        CONCAT_WS('-',
+            SUBSTRING(HEX(binary_value), 1, 8),
+            SUBSTRING(HEX(binary_value), 9, 4),
+            SUBSTRING(HEX(binary_value), 13, 4),
+            SUBSTRING(HEX(binary_value), 17, 4),
+            SUBSTRING(HEX(binary_value), 21, 12)
+        )
+    );
+END //
+
+DELIMITER ;
+
 
 -- DROP PROCEDURE IF EXISTS sp_add_kit;
 
@@ -54,7 +72,31 @@ DROP PROCEDURE IF EXISTS sp_get_all_categories;
 DELIMITER //
 CREATE PROCEDURE sp_get_all_categories()
 BEGIN
-    SELECT * FROM KitCategory;
+    SELECT 
+		BinaryToGuid(KitCategoryId) AS KitCategoryId,
+		BinaryToGuid(TenantId) AS TenantId,
+		CategoryName,
+		CategoryDescription,
+		CreatedOn,
+		UpdatedOn
+	FROM KitCategory;
+END;
+//
+DELIMITER ;
+
+DROP PROCEDURE IF EXISTS sp_get_all_conditions;
+
+DELIMITER //
+CREATE PROCEDURE sp_get_all_conditions()
+BEGIN
+    SELECT 
+		BinaryToGuid(KitConditionId) AS KitConditionId,
+		BinaryToGuid(TenantId) AS TenantId,
+		ConditionName,
+		ConditionDescription,
+		CreatedOn,
+		UpdatedOn
+	FROM KitCategory;
 END;
 //
 DELIMITER ;

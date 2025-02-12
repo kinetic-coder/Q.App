@@ -1,9 +1,8 @@
-using System.Data;
 using MySql.Data.MySqlClient;
 
-namespace Q.App.Api.Models;
+namespace Q.App.Api.Repositories;
 
-public class BaseRepository(IDbConnection dbConnection)
+public class BaseRepository(MySqlConnection dbConnection)
 {
     protected readonly MySqlConnection DbConnection = dbConnection;
 }

@@ -18,7 +18,7 @@ namespace Q.App.Api.Controllers.v1.Category
             List<Models.Category> categories;
             try
             {
-                categories = repo.GetCategories();
+                categories = repo.Get();
             }
             catch (Exception e)
             {

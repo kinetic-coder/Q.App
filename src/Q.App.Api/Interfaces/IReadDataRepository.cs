@@ -4,6 +4,6 @@ namespace Q.App.Api.Interfaces;
 
 public interface IReadDataRepository <TResult>
 {
-    List<TResult> GetCategories();
-    TResult GetCategory(Guid id);
+    List<TResult> Get();
+    TResult Get(Guid id);
 }

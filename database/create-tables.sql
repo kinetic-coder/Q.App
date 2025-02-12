@@ -40,7 +40,7 @@ CREATE TABLE UserTenant (
 
 /* Create an address location table */
 CREATE TABLE Address (
-    AddressLocationId BINARY(16) PRIMARY KEY,
+    AddressId BINARY(16) PRIMARY KEY,
     Nickname VARCHAR(100) DEFAULT'',
     TenantId BINARY(16) NOT NULL,
     AddressLine1 VARCHAR(255) NOT NULL,
@@ -104,10 +104,10 @@ CREATE TABLE Kit (
 CREATE TABLE KitAddress (
     KitAddressId BINARY(16) PRIMARY KEY,
     KitId BINARY(16) NOT NULL,
-    AddressLocationId BINARY(16) NOT NULL,
+    AddressId BINARY(16) NOT NULL,
     CreatedOn TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (KitId) REFERENCES Kit(KitId),
-    FOREIGN KEY (AddressLocationId) REFERENCES Address(AddressLocationId),
-    UNIQUE (KitId, AddressLocationId)
+    FOREIGN KEY (AddressId) REFERENCES Address(AddressId),
+    UNIQUE (KitId, AddressId)
 );
 
