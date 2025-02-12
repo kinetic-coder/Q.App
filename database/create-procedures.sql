@@ -100,3 +100,67 @@ BEGIN
 END;
 //
 DELIMITER ;
+
+DROP PROCEDURE IF EXISTS sp_get_all_addresses;
+
+DELIMITER //
+CREATE PROCEDURE sp_get_all_addresses(
+	IN TenantId BINARY(16)
+)
+BEGIN
+    SELECT 
+		BinaryToGuid(AddressId) AS AddressId,
+		BinaryToGuid(TenantId) AS TenantId,
+		Nickname,
+		AddressLine1,
+		AddressLine2,
+		City,
+		Town,
+		PostCode,
+		AddressLocationStatus
+
+	FROM Address
+	WHERE TenantId = TenantId;
+END;
+//
+DELIMITER ;
+
+DROP PROCEDURE IF EXISTS sp_get_all_kit;
+
+DELIMITER //
+CREATE PROCEDURE sp_get_all_kit(
+	IN TenantId BINARY(16)
+)
+BEGIN
+    SELECT 
+		BinaryToGuid(k.KitId) AS KitId,
+		BinaryToGuid(k.TenantId) AS TenantId,
+		k.Nickname,
+		k.KitName,
+		k.KitDescription,
+		k.PurchaseDate,
+		k.PurchasePrice,
+		k.LiftSpanInYears,
+		k.EstimatedInsuranceValue,
+		k.EstimatedReplacementDate,
+		BinaryToGuid(k.KitCategoryId) AS KitCategoryId,
+		kcat.CategoryName,
+		BinaryToGuid(k.KitConditionId) AS KitConditionId,
+		kcond.ConditionName,
+		k.Notes,
+		k.KitCode,
+		k.KitStatus,
+		a.Nickname AS AddressNickname
+	FROM Kit k
+	LEFT JOIN KitCategory kcat
+		ON k.KitCategoryId = kcat.KitCategoryId
+	LEFT JOIN KitCondition kcond
+		ON k.KitConditionId = kcond.KitConditionId 
+	LEFT JOIN KitAddress ka
+		ON k.KitId = ka.KitId
+	LEFT JOIN Address a
+		ON ka.AddressId = a.AddressId
+	WHERE TenantId = TenantId;
+END;
+//
+DELIMITER ;
