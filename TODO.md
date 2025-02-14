@@ -1,15 +1,27 @@
 # Todo list
 
+
+
 ## API
 
-### MVP
+### Stored Procedures
+    [X] get_all_categories
+    [X] get_all_conditions
+    [X] get_all_addresses
+    [X] get_all_kit
+    [X] get_kit_by_id
+    [ ] add_kit
+    [ ] update_kit_by_id
+    [ ] delete_kit_by_id
+
+### API
 
     [ ] Enable login 
-    [X] Get Categories 
+    [ ] Get Categories 
     [ ] Get Category By Id
-    [X] Get Conditions
+    [ ] Get Conditions
     [ ] Get Condition By Id
-    [X] Get Addresses
+    [ ] Get Addresses
     [ ] Get Address by Id
     [ ] Get Kit list
     [ ] Add Kit
