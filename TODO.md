@@ -1,6 +1,8 @@
 # Todo list
 
-
+| Use Case | Table | Procedure | API endpoint | UI |
+| - | - | - | - | - |
+| Get a list of kit | Yes | No | No | No |
 
 ## API
 
